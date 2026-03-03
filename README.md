@@ -56,3 +56,18 @@ npm run dev
 Due to local system configuration issues, the project execution could not be completed
 at submission time. However, the complete structure, design, and implementation plan
 are provided and ready for final integration.
+
+
+## AI Integration Plan
+The application is designed to integrate AI-based insights for movies using a Large
+Language Model (LLM). The AI module will generate:
+- Movie summaries
+- Genre-based analysis
+- Target audience recommendations
+- Sentiment-based insights
+
+The AI layer is abstracted into a separate utility module to allow easy integration
+with services such as OpenAI, Azure OpenAI, or other LLM providers.
+
+At the current stage, AI responses are planned using mock data to validate UI flow,
+with real API integration intended in the final phase.
