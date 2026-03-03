@@ -73,10 +73,3 @@ At the current stage, AI responses are planned using mock data to validate UI fl
 with real API integration intended in the final phase.
 
 
-
-
-  return NextResponse.json({
-    summary: `AI insight for ${movie}`,
-    audience: 'Drama and thriller lovers',
-  });
-}
