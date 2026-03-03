@@ -74,11 +74,6 @@ with real API integration intended in the final phase.
 
 
 
-// src/app/api/ai/route.ts
-import { NextResponse } from 'next/server';
-
-export async function POST(req: Request) {
-  const { movie } = await req.json();
 
   return NextResponse.json({
     summary: `AI insight for ${movie}`,
