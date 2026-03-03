@@ -71,3 +71,17 @@ with services such as OpenAI, Azure OpenAI, or other LLM providers.
 
 At the current stage, AI responses are planned using mock data to validate UI flow,
 with real API integration intended in the final phase.
+
+
+
+// src/app/api/ai/route.ts
+import { NextResponse } from 'next/server';
+
+export async function POST(req: Request) {
+  const { movie } = await req.json();
+
+  return NextResponse.json({
+    summary: `AI insight for ${movie}`,
+    audience: 'Drama and thriller lovers',
+  });
+}
